@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8vh 4vw 0vh 4vw;
+
+    .card {
+        padding: 2vh 0vw;
+        width: 40vw;
+            .border{
+                position: relative;
+                overflow: hidden;
+                
+                .image{
+                    width: 60%;
+                    height: auto;
+                    box-shadow: 3px 12px 6px 0px #30161f;
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: all ease-in-out .7s;
+                        -webkit-transition: all ease-in-out .7s;
+                    }
+                }
+            }
+    }
+
+    .lovelogo {
+        margin: 10% 0%;
+        img {
+            width: 15vh;
+        }
+        &:hover {
+            transform: scale(1.05);
+            transition: all ease-in-out .7s;
+            -webkit-transition: all ease-in-out .7s;
+        }
+    }
+    
+    .title {
+        color: #d52542;
+        margin: 10px 0px;
+        font-family: inherit;
+        letter-spacing: 8px;
+        .lastname {
+            letter-spacing: 6px;
+            font-size: small;
+        }
+    }
+    .para {
+        margin: 2px 0px;
+    }
+    .icons {
+        a {
+            padding: 0px 2px !important;
+            font-size: 24px !important;
+            color: #ff4766;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: block;
+    }
+
+    .card {
+        width: auto !important;
+    }
+    .image{
+        width: auto;
+        height: 70vh;
+    }
+}
+
+@keyframes zoomburns {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
